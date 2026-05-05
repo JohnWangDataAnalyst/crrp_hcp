@@ -21,9 +21,9 @@ The script is robust to missing files. If a global or network CSV is missing, it
 ## Run
 
 ```bash
-python crrp_hcp_csv_analysis_pipeline.py \
-  --input-dir /path/to/csv_folder \
-  --output-dir crrp_hcp_analysis_outputs
+python src/crrp_hcp_csv_analysis_pipeline.py \
+  --input-dir data/processed \
+  --output-dir outputs/crrp_hcp_analysis
 ```
 
 ## Outputs
@@ -68,6 +68,7 @@ Important figures include:
 6. Intact-vs-shuffle paired global tests with paired t-test, Wilcoxon signed-rank test, FDR q values, and paired Cohen's dz.
 7. Intact-vs-shuffle network-profile correlations and Allocation-gradient range reduction.
 8. Route hierarchy tests if THA/BG/CB observer-energy columns are available.
+
 
 ## Notes
 
